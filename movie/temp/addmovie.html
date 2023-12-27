@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add more movies</title>
+</head>
+<body>
+<form method="POST">
+
+    {% csrf_token%}
+    <a class="nav-link" href="{% url 'movieapp:add_movie' %}">Add More Movies</a>
+
+    Are you sure,you want to add more Movie?
+    <input type="submit">
+</form>
+</body>
+</html>
